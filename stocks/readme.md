@@ -60,9 +60,17 @@ File Structure
 
 .
 ├── index.html       # Main HTML page
+
+
 ├── style.css        # CSS for styling the project
+
+
 ├── index.js         # JavaScript to manage stock data and interactions
+
+
 ├── chart.js         # JavaScript for fetching and drawing the stock chart
+
+
 └── README.md        # Project documentation
 
 
