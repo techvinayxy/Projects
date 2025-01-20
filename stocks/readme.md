@@ -55,7 +55,7 @@ The right-click functionality is disabled to prevent unauthorized users from cop
 
 
 
-Fi8e Structure
+File Structure
 .
 ├── index.html       # Main HTML page
 ├── style.css        # CSS for styling the project
@@ -73,8 +73,16 @@ Make your changes and commit them (git commit -m 'Add new feature').
 Push to the branch (git push origin feature-branch).
 Create a pull request.
 
+
+
 Contact
 Created by Vinay Pandey
-Email: 
+Email: vinaywork100@gmail.com
 
 
+### Instructions:
+1. Replace `your-username` and `your-email@example.com` with your actual GitHub username and email.
+2. Update the link to the live demo if needed.
+3. Feel free to add more details as required, such as how to use or extend the project.
+
+Let me know if you need any further modifications!
