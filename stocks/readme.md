@@ -56,6 +56,8 @@ The right-click functionality is disabled to prevent unauthorized users from cop
 
 
 File Structure
+
+
 .
 ├── index.html       # Main HTML page
 ├── style.css        # CSS for styling the project
