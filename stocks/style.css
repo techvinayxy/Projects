@@ -1,150 +1,150 @@
-body {
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: rgb(1, 1, 41);
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
     color: white;
-  }
+    padding: 10px 0;
+}
 
-  #header{
-    height: 10%;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-
-  }
-  
-  canvas {
-    /* border: 1px solid #ccc; */
-  }
-  .chart-container {
-    position: relative;
-    
-  }
-  .chart-tooltip {
-    position: absolute;
-    display: none;
-    padding: 5px;
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    background-color: rgb(1, 1, 69);
-    color: #fff;
-    font-size: 12px;
-    border-radius: 5px;
-    pointer-events: none;
-  }
-  .x-axis-label {
-    position: absolute;
-    bottom: -20px;
-    font-size: 10px;
-    color: #888;
-  }
-  #stock-chart{
-    /* background-color: rgb(34, 34, 34); */
-    background-color: rgb(1, 1, 69);
-    border-radius: 10px;
-    width: 60%;
-    margin-top: 10px;
-    padding-top: 20px;
-    /* border: 2px solid transparent;
-  border-image: linear-gradient(to right, #f00, #0f0, #00f);
-  border-image-slice: 1;
-  animation: fade 5s infinite; */
-  }
-
-  #stock-chart button{
-    background-color: rgb(2, 2, 116);
-    /* opacity: .7; */
-    font-size: 18px;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    margin-right: 40px;
-    margin-bottom: 10px;
-
-  }
-  #chart-canvas{
-    margin-top: 10px;
-    padding-top: 10px;
-  }
-  #stock-chart button:hover{
-    opacity: 1;
-    background-color: rgb(3, 3, 131);
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    /* margin-right: 20px ; */
-  }
-  #summary{
-    margin-top: 20px;
-    width: 60%; 
-  }
-  #summary p{
-    font-size: 12px;
+.navbar .container {
     display: flex;
-justify-content: center;
-  }
-  #name{
-    /* font-weight: 100; */
-    font-size: 20px;
-    font-weight: bolder;
-  }
-  #profit{
-    /* font-weight: 100; */
-    font-size: 20px;
-    font-weight: bolder;
-  }
-  #bookValue{
-    /* font-weight: 100; */
-    font-size: 20px;
-    font-weight: bolder;
-  }
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  #container{
-    display: flex;
-  }
-  #stock-list{
-    position: absolute;
-    right: 80px;
-  }
-  .list{
-    position: relative;
-    right: 0px;
-    height: 30px;
-    width: 60px;
-    /* padding: 10px; */
-    color: white;
-    justify-content: center;
-    align-items: center ;
-    margin: 5px;
-    border-radius: 5px;
-    /* padding-left: 30px; */
-    background-color: rgb(11, 11, 165);
-  }
-  .list:hover{
-    background-color: rgb(1, 1, 41);
-    cursor: pointer;
-  }
-  .list span{
-    margin-right: 10px ;
-  }
-  #button{
-    margin-top:30px ;
-    display: flex;
-    justify-content: center;
-    padding-left: 10px;
-  }
-  .list_i span{
-    margin: 10px;
-  }
-  .highlight-message {
-    background-color: #ffeeba; /* Light yellow background */
-    color: #856404; /* Dark brown text */
-    border: 1px solid #ffeeba; /* Border matching the background */
-    padding: 10px;
-    font-size: 16px;
+.navbar .logo {
+    font-size: 24px;
     font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: url(/ecom-website/images/hero.jpg) no-repeat center center/cover;
+    color: rgb(255, 255, 255);
     text-align: center;
-    border-radius: 5px;
-    margin: 20px auto;
-    width: fit-content;
-  }
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: #e04e2e;
+}
+
+/* Product Section */
+.products {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.product-card .btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card .btn:hover {
+    background-color: #e04e2e;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 16px;
+}
