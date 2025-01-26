@@ -1,0 +1,99 @@
+/* General styling for the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Center the content and add some spacing */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px 20px;
+    text-align: center;
+}
+
+/* Header styling for product name */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Styling for images to make them pop */
+img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for price to make it stand out */
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #e91e63;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+/* Styling for product description */
+#product-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Button style for 'Back to Products' */
+.back-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
+    .price {
+        font-size: 1.4rem;
+    }
+
+    #product-description {
+        font-size: 1rem;
+    }
+}
