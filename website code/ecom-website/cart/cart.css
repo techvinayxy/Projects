@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 1.5rem;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.navbar nav {
+    float: right;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* Cart Section */
+.cart {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Title */
+.cart h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #004080;
+    font-weight: 600;
+}
+
+/* Cart Items Section */
+.cart-items {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item h4 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    flex: 1;
+    color: #333;
+}
+
+.cart-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Checkout Button */
+#checkout-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+#checkout-btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    margin-top: 2rem;
+    border-top: 4px solid #f1c40f;
+}
+
+/* Error Message Styling */
+#error-message {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #e74c3c;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart {
+        padding: 1.5rem;
+    }
+
+    .cart-items {
+        padding: 1rem;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        margin-bottom: 1rem;
+    }
+
+    #checkout-btn {
+        width: 100%;
+    }
+}

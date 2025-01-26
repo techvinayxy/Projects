@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Vision</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/ecom-website/e-shop.html">Home</a></li>
+                    <li><a href="/ecom-website/Product/Product-detail.html">Products</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <div id="cart-items" class="cart-items">
+                    <p>Your cart is empty.</p>
+                </div>
+                <div class="cart-summary">
+                    <h3>Total: <span id="cart-total">Rs 0</span></h3>
+                    <button id="checkout-btn" class="btn">Checkout</button>
+                </div>
+            </div>
+
+            <!-- Error message container -->
+<div id="error-message" style="font-size: 1.2rem; margin-top: 10px;"></div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vision Motors. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
